@@ -8,11 +8,9 @@ title: Home
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">
-        <h2> {{ post.title }} </h2>
+      <a href="{{ post.url }}"> <h2> {{ post.title }} </h2> </a>
         <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
         <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
-      </a>
     </li>
   {% endfor %}
 </ul>
