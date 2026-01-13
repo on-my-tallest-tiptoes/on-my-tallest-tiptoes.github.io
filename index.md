@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-dit is een test! - home page!
+# posts!
 
 <ul>
   {% for post in site.posts %}
